@@ -34,3 +34,4 @@ appsettings.Development.json
 appsettings.Local.json
 tests/todo-frontend.e2e/test-results/.last-run.json
 nul
+src/TodoApi/appsettings.json

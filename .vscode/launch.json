@@ -1,0 +1,42 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "API (.NET)",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build-api",
+      "program": "${workspaceFolder}/src/TodoApi/bin/Debug/net10.0/TodoApi.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/src/TodoApi",
+      "stopAtEntry": false,
+      "env": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "console": "integratedTerminal",
+      "serverReadyAction": {
+        "action": "openExternally",
+        "pattern": "Now listening on:\\s+http://\\S+",
+        "uriFormat": "http://localhost:5079/swagger"
+      }
+    },
+    {
+      "name": "Frontend (Vite)",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:5173",
+      "webRoot": "${workspaceFolder}/src/todo-frontend/src",
+      "preLaunchTask": "run-frontend"
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Full Stack (API + Frontend)",
+      "configurations": ["API (.NET)", "Frontend (Vite)"],
+      "stopAll": true,
+      "presentation": {
+        "order": 1
+      }
+    }
+  ]
+}

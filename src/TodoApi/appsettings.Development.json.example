@@ -1,0 +1,14 @@
+{
+  "Jwt": {
+    "Secret": "your-dev-secret-key-must-be-at-least-64-characters-long-replace-this!!"
+  },
+  "ConnectionStrings": {
+    "SqlServer": "Server=localhost,1433;Database=TodoDb;User Id=sa;Password=Your_password123;TrustServerCertificate=true"
+  },
+  "EmailJs": {
+    "ServiceId": "",
+    "TemplateId": "",
+    "PublicKey": "",
+    "PrivateKey": ""
+  }
+}
