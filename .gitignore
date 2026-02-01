@@ -1,0 +1,36 @@
+# .NET
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.vs/
+*.db
+*.db-shm
+*.db-wal
+
+# Node / Frontend
+node_modules/
+dist/
+.env
+.env.local
+.env.*.local
+
+# IDE
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+docker-compose.override.yml
+
+# Secrets
+appsettings.Development.json
+appsettings.Local.json
+tests/todo-frontend.e2e/test-results/.last-run.json
+nul
